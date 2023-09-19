@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600&family=Work+Sans:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <main class="conteiner">
+    <h1 class="title">Continue entering data</h1>
+    <form action="" method="" class="form">
+      <div class="field form__field">
+        <label class="field__label" for="first-name">First Name</label>
+        <input class="field__input" id="first-name" type="text" placeholder="Pavel" name="first-name">
+      </div>
+      <div class="field form__field">
+        <label class="field__label" for="last-name">Last Name</label>
+        <input class="field__input" id="last-name" type="text" placeholder="Tselyuko" name="last-name">
+      </div>
+      <div class="field form__field">
+        <label class="field__label" for="phone">Phone Number</label>
+        <input class="field__input" id="phone" type="tel" placeholder="+1 (484) 2918858" name="phone">
+      </div>
+      <div class="field form__field">
+        <label class="field__label" for="country">Country</label>
+        <input class="field__input" id="country" type="text" placeholder="USA" name="country">
+      </div>
+      <div class="field form__field">
+        <label class="field__label" for="city">City</label>
+        <input class="field__input" id="city" type="text" placeholder="New York" name="city">
+      </div>
+      <div class="field form__field">
+        <label class="field__label" for="street">Street</label>
+        <input class="field__input" id="street" type="text" placeholder="Wall St" name="street">
+      </div>
+      <div class="click form__click--1">
+        <label class="click__label" for="gender">Legal Gender</label>
+        <div><input class="click__radio" id="gender" type="radio" value="1" name="gender"><span
+            class="click__text">Male</span>
+        </div>
+        <div><input class="click__radio" id="gender" type="radio" value="2" name="gender"><span
+            class="click__text">Female</span></div>
+        <div><input class="click__radio" id="gender" type="radio" value="3" name="gender"><span
+            class="click__text">Other</span></div>
+      </div>
+      <div class="click form__click--2">
+        <label class="click__label" for="notify">Notify me about...</label>
+        <div><input class="click__radio" id="notify" type="radio" value="1" name="notify"><span class="click__text">All
+            new messages</span></div>
+        <div><input class="click__radio" id="notify" type="radio" value="2" name="notify"><span class="click__text">
+            Direct messages, mentions &
+            keywords
+          </span></div>
+        <div><input class="click__radio" id="notify" type="radio" value="3" name="notify"><span
+            class="click__text">Nothing</span></div>
+      </div>
+      <div class="click form__click--3">
+        <input class="click__checkbox" type="checkbox" name="agreement"><span>Notify me about replies to threads I’m
+          following</span>
+      </div>
+      <button class="button form__button" type="submit">Start Application</button>
+    </form>
+  </main>
+</body>
+
+</html>
