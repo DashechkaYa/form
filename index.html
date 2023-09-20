@@ -19,13 +19,15 @@
   <main class="conteiner">
     <h1 class="title">Continue entering data</h1>
     <form action="" method="" class="form">
-      <div class="field form__field">
-        <label class="field__label" for="first-name">First Name</label>
-        <input class="field__input" id="first-name" type="text" placeholder="Pavel" name="first-name">
-      </div>
-      <div class="field form__field">
-        <label class="field__label" for="last-name">Last Name</label>
-        <input class="field__input" id="last-name" type="text" placeholder="Tselyuko" name="last-name">
+      <div class="form__align">
+        <div class="field form__field form__align--item">
+          <label class="field__label" for="first-name">First Name</label>
+          <input class="field__input" id="first-name" type="text" placeholder="Pavel" name="first-name">
+        </div>
+        <div class="field form__field form__align--item">
+          <label class="field__label" for="last-name">Last Name</label>
+          <input class="field__input" id="last-name" type="text" placeholder="Tselyuko" name="last-name">
+        </div>
       </div>
       <div class="field form__field">
         <label class="field__label" for="phone">Phone Number</label>
@@ -35,37 +37,48 @@
         <label class="field__label" for="country">Country</label>
         <input class="field__input" id="country" type="text" placeholder="USA" name="country">
       </div>
-      <div class="field form__field">
-        <label class="field__label" for="city">City</label>
-        <input class="field__input" id="city" type="text" placeholder="New York" name="city">
+      <div class="form__align">
+        <div class="field form__field">
+          <label class="field__label" for="city">City</label>
+          <input class="field__input" id="city" type="text" placeholder="New York" name="city">
+        </div>
+        <div class="field form__field">
+          <label class="field__label" for="street">Street</label>
+          <input class="field__input" id="street" type="text" placeholder="Wall St" name="street">
+        </div>
       </div>
-      <div class="field form__field">
-        <label class="field__label" for="street">Street</label>
-        <input class="field__input" id="street" type="text" placeholder="Wall St" name="street">
-      </div>
+
       <div class="click form__click--1">
         <label class="click__label" for="gender">Legal Gender</label>
-        <div><input class="click__radio" id="gender" type="radio" value="1" name="gender"><span
-            class="click__text">Male</span>
+        <div class="form__click--align-1">
+          <div><input class="click__radio" id="gender" type="radio" value="1" name="gender"><span
+              class="click__text">Male</span>
+          </div>
+          <div><input class="click__radio" id="gender" type="radio" value="2" name="gender"><span
+              class="click__text">Female</span></div>
+          <div><input class="click__radio" id="gender" type="radio" value="3" name="gender"><span
+              class="click__text">Other</span></div>
         </div>
-        <div><input class="click__radio" id="gender" type="radio" value="2" name="gender"><span
-            class="click__text">Female</span></div>
-        <div><input class="click__radio" id="gender" type="radio" value="3" name="gender"><span
-            class="click__text">Other</span></div>
       </div>
+
       <div class="click form__click--2">
         <label class="click__label" for="notify">Notify me about...</label>
-        <div><input class="click__radio" id="notify" type="radio" value="1" name="notify"><span class="click__text">All
-            new messages</span></div>
-        <div><input class="click__radio" id="notify" type="radio" value="2" name="notify"><span class="click__text">
-            Direct messages, mentions &
-            keywords
-          </span></div>
-        <div><input class="click__radio" id="notify" type="radio" value="3" name="notify"><span
-            class="click__text">Nothing</span></div>
+        <div class="form__click--align-2">
+          <div><input class="click__radio" id="notify" type="radio" value="1" name="notify"><span
+              class="click__text">All
+              new messages</span></div>
+          <div><input class="click__radio" id="notify" type="radio" value="2" name="notify"><span class="click__text">
+              Direct messages, mentions &
+              keywords
+            </span></div>
+          <div><input class="click__radio" id="notify" type="radio" value="3" name="notify"><span
+              class="click__text">Nothing</span></div>
+        </div>
       </div>
+
       <div class="click form__click--3">
-        <input class="click__checkbox" type="checkbox" name="agreement"><span>Notify me about replies to threads I’m
+        <input class="click__checkbox" type="checkbox" name="agreement"><span class="click__text">Notify me about
+          replies to threads I’m
           following</span>
       </div>
       <button class="button form__button" type="submit">Start Application</button>
