@@ -3,7 +3,6 @@ body {
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   padding: 0 1rem 0 1rem;
 }
 
@@ -79,7 +78,7 @@ body {
   margin: 2.5rem 0;
 }
 
-.click__label {
+.click__title {
   font-weight: 600;
   font-size: 0.875rem;
   line-height: 1.028rem;
@@ -99,7 +98,36 @@ body {
   gap: 1rem;
 }
 
-.click__radio {
+.click__radio--custom {
+  width: 14px;
+  height: 14px;
+  background-color: #ffffff;
+  border: 1.17px solid #c4c4c4;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+
+.click__radio--custom::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background-color: #000000;
+  border: none;
+  border-radius: 50%;
+  display: inline-flex;
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  display: none;
+}
+
+.click__radio--real:checked
+  + .click__radio--custom::before
+  + .click__radio--custom {
+  display: block;
+  border: 1.17px solid #000000;
 }
 
 .click__text {
