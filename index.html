@@ -19,69 +19,78 @@
   <main class="conteiner">
     <h1 class="title">Continue entering data</h1>
     <form action="" method="" class="form">
-      <div class="form__align">
-        <div class="field form__field form__align--item">
+      <div class="form__input-grid">
+        <div class="field form__half-field">
           <label class="field__label" for="first-name">First Name</label>
           <input class="field__input" id="first-name" type="text" placeholder="Pavel" name="first-name">
         </div>
-        <div class="field form__field form__align--item">
+        <div class="field form__half-field">
           <label class="field__label" for="last-name">Last Name</label>
           <input class="field__input" id="last-name" type="text" placeholder="Tselyuko" name="last-name">
         </div>
-      </div>
-      <div class="field form__field">
-        <label class="field__label" for="phone">Phone Number</label>
-        <input class="field__input" id="phone" type="tel" placeholder="+1 (484) 2918858" name="phone">
-      </div>
-      <div class="field form__field">
-        <label class="field__label" for="country">Country</label>
-        <input class="field__input" id="country" type="text" placeholder="USA" name="country">
-      </div>
-      <div class="form__align">
-        <div class="field form__field">
+        <div class="field form__full-field">
+          <label class="field__label" for="phone">Phone Number</label>
+          <input class="field__input" id="phone" type="tel" placeholder="+1 (484) 2918858" name="phone">
+        </div>
+        <div class="field form__full-field">
+          <label class="field__label" for="country">Country</label>
+          <input class="field__input" id="country" type="text" placeholder="USA" name="country">
+        </div>
+        <div class="field form__half-field">
           <label class="field__label" for="city">City</label>
           <input class="field__input" id="city" type="text" placeholder="New York" name="city">
         </div>
-        <div class="field form__field">
+        <div class="field form__half-field">
           <label class="field__label" for="street">Street</label>
           <input class="field__input" id="street" type="text" placeholder="Wall St" name="street">
         </div>
       </div>
 
-      <div class="click form__click--1">
-        <div class="click__title" for="gender">Legal Gender</div>
-        <div class="form__click--align-1">
-          <label><input class="click__radio--real" id="gender" type="radio" value="1" name="gender"><span
-              class="click__radio--custom"></span><span class="click__text">Male</span>
+      <div class="radio-group form__gender-group">
+        <div class="radio-group__title" for="gender">Legal Gender</div>
+        <div class="radio-group__row">
+          <label class="radio radio-group__item"><input class="radio__input" id="gender" type="radio" value="1"
+              name="gender"><span class="radio__dot"></span><span class="radio__text">Male</span>
           </label>
-          <label><input class="click__radio--real" id="gender" type="radio" value="2" name="gender"><span
-              class="click__radio--custom"></span><span class="click__text">Female</span></label>
-          <label><input class="click__radio--real" id="gender" type="radio" value="3" name="gender"><span
-              class="click__radio--custom"></span><span class="click__text">Other</span></label>
+          <label class="radio radio-group__item"><input class="radio__input" id="gender" type="radio" value="2"
+              name="gender"><span class="radio__dot"></span><span class="radio__text">Female</span></label>
+          <label class="radio radio-group__item"><input class="radio__input" id="gender" type="radio" value="3"
+              name="gender"><span class="radio__dot"></span><span class="radio__text">Other</span></label>
         </div>
       </div>
 
-      <div class="click form__click--2">
-        <div class="click__title" for="notify">Notify me about...</div>
-        <div class="form__click--align-2">
-          <label><input class="click__radio--real" id="notify" type="radio" value="1" name="notify"><span
-              class="click__radio--custom"></span><span class="click__text">All
+      <div class="radio-group form__notify-group">
+        <div class="radio-group__title" for="notify">Notify me about...</div>
+        <div class="radio-group__column">
+          <label class="radio radio-group__item"><input class="radio__input" id="notify" type="radio" value="1"
+              name="notify"><span class="radio__dot"></span><span class="radio__text">All
               new messages</span></label>
-          <label><input class="click__radio--real" id="notify" type="radio" value="2" name="notify"><span
-              class="click__radio--custom"></span><span class="click__text">
+          <label class="radio radio-group__item"><input class="radio__input" id="notify" type="radio" value="2"
+              name="notify"><span class="radio__dot"></span><span class="radio__text">
               Direct messages, mentions &
               keywords
             </span></label>
-          <label><input class="click__radio--real" id="notify" type="radio" value="3" name="notify"><span
-              class="click__radio--custom"></span><span class="click__text">Nothing</span></label>
+          <label class="radio radio-group__item"><input class="radio__input" id="notify" type="radio" value="3"
+              name="notify"><span class="radio__dot"></span><span class="radio__text">Nothing</span></label>
         </div>
       </div>
 
-      <div class="click form__click--3">
-        <input class="click__checkbox" type="checkbox" name="agreement"><span class="click__text">Notify me about
-          replies to threads I’m
-          following</span>
+      <div class="checkbox-group form__checkbox">
+        <label class="checkbox">
+          <input class="checkbox__input" type="checkbox" name="agreement">
+          <span class="checkbox__button"><svg class="checkbox__icon" width="9" height="7" viewBox="0 0 9 7"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5683 4.99024L0.912166 3.3341C0.72603 3.14796 0.425348 3.14796 0.239212 3.3341C0.0530753 3.52024 0.0530753 3.82092 0.239212 4.00706L2.23421 6.00206C2.42035 6.18819 2.72103 6.18819 2.90717 6.00206L7.95671 0.95251C8.14285 0.766374 8.14285 0.465692 7.95671 0.279556C7.77058 0.0934195 7.46989 0.0934195 7.28376 0.279556L2.5683 4.99024Z" />
+            </svg>
+          </span class="checkbox__button">
+          <span class="checkbox__text">Notify me about
+            replies to threads I’m
+            following
+          </span>
+        </label>
       </div>
+
       <button class="button form__button" type="submit">Start Application</button>
     </form>
   </main>
