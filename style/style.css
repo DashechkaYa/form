@@ -41,6 +41,7 @@ body {
 
 .field__input {
   background-color: #f8f8f8;
+  border: 1px solid #f8f8f8;
   border-radius: 4px;
   border: none;
   width: 100%;
@@ -50,11 +51,12 @@ body {
 
 .field__input:hover {
   background-color: #edf9f5;
+  border-color: #edf9f5;
 }
 
 .field__input:focus {
   outline: none;
-  border: 1px solid #59d4ad;
+  border-color: #59d4ad;
   background-color: #f8f8f8;
 }
 
@@ -161,12 +163,12 @@ body {
   visibility: hidden;
 }
 
-.radio__input:focus + .radio__dot::after {
+.radio__input:checked + .radio__dot::after {
   opacity: 1;
   visibility: visible;
 }
 
-.radio__input:focus + .radio__dot {
+.radio__input:checked + .radio__dot {
   border: 1px solid #000000;
 }
 
@@ -237,7 +239,7 @@ body {
   height: 11px;
 }
 
-.checkbox__input:focus + .checkbox__button {
+.checkbox__input:checked + .checkbox__button {
   background-color: #000000;
   border-color: #000000;
 }
